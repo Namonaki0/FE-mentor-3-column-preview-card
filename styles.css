@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --paragraph-colour: hsla(0, 0%, 100%, 0.75);
+  --secondary-colour: hsl(0, 0%, 95%);
+  --font-size: 15px;
+  --title-font: "Big Shoulders Display", sans-serif;
+  --text-font: "Lexend Deca", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  font-family: var(--text-font);
+}
+
+/* MOBILE */
+main {
+  border-radius: 15px;
+  max-width: 315px;
+  padding: 1rem;
+}
+
+section {
+  padding: 2.8rem 2.5rem 2.5rem;
+  color: var(--secondary-colour);
+}
+
+section:first-child {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+section:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.image-wrapper {
+  margin-bottom: 1.6rem;
+}
+
+.section-wrapper:first-child {
+  background: var(--orange);
+}
+
+.section-wrapper:nth-child(even) {
+  background: var(--dark-cyan);
+}
+
+.section-wrapper:last-child {
+  background: var(--very-dark-cyan);
+}
+
+.title {
+  font-family: var(--title-font);
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: .5px;
+}
+
+.paragraph {
+  margin-bottom: 1.8rem;
+  font-size: small;
+  line-height: 22px;
+  color: var(--paragraph-colour);
+}
+
+button {
+  all: unset;
+  background: var(--secondary-colour);
+  padding: 0.7rem 1.6rem;
+  border-radius: 25px;
+  font-size: small;
+  cursor: pointer;
+  border: 2px solid var(--secondary-colour);
+  transition: all 150ms linear;
+}
+
+.sedan-cta {
+  color: var(--orange);
+}
+
+.suv-cta {
+  color: var(--dark-cyan);
+}
+
+.luxury-cta {
+  color: var(--very-dark-cyan);
+}
+
+button:hover,
+button:focus {
+    background: transparent;
+    color: var(--secondary-colour);
+}
+
+/* DESKTOP */
+@media (min-width: 1440px) {
+  main {
+    display: flex;
+    max-width: 825px;
+  }
+
+  section {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: unset;
+    border-bottom-left-radius: 8px;
+  }
+
+  section:last-child {
+    border-bottom-left-radius: unset;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .title {
+      margin-bottom: 1.5rem;
+  }
+
+  .paragraph {
+    margin-bottom: 4rem;
+  }
+
+  button {
+    margin-top: auto;
+    width: max-content;
+  }
+}
