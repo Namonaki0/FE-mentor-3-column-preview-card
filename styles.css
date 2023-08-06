@@ -21,7 +21,7 @@ body {
   display: grid;
   min-height: 100vh;
   place-content: center;
-  background: rgb(235, 235, 235);
+  background: hsl(0, 0%, 95%);
   font-family: var(--text-font);
 }
 
