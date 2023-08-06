@@ -1,6 +1,6 @@
-# Frontend Mentor - 3-column preview card component solution
+# Frontend Mentor - 3 Column Preview Card Component Solution
 
-[![Netlify Status]()]()
+[![Netlify Status](https://api.netlify.com/api/v1/badges/51a57a02-8bfc-4374-bc49-2945a47d7744/deploy-status)](https://app.netlify.com/sites/fementor-af-3-column-preview-card/deploys)
 
 ---
 
@@ -8,25 +8,23 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### Screenshot
 
-![mobile top](./completed_screenshots/mobile_top.PNG)![mobile bottom](./completed_screenshots/mobile_bottom.PNG)
+![mobile top](./completed_screenshots/mobile_top.PNG) ![mobile bottom](./completed_screenshots/mobile_bottom.PNG)
 ![desktop](./completed_screenshots/desktop.PNG)
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL: []()
+- Solution URL: [https://github.com/Namonaki0/FE-mentor-3-column-preview-card](https://github.com/Namonaki0/FE-mentor-3-column-preview-card)
+- Live Site URL: [https://fementor-af-3-column-preview-card.netlify.app](https://fementor-af-3-column-preview-card.netlify.app)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- SCSS custom properties
+- HTML
+- CSS
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- Media Queries & Keyframes
-- Vanilla JavaScript
 
 Netlify used for deployment.
 
